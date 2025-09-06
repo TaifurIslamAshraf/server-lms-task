@@ -42,10 +42,7 @@ const moduleRoutes = [
       path: "/learning",
       route: userCourseRouter,
     },
-    {
-      path: "/uploads",
-      route: uploadRouter,
-    },
+   
 
 ];
 
