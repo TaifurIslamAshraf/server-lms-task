@@ -7,6 +7,7 @@ import courseRouter from "../modules/course-management/course/course.route";
 import moduleRouter from "../modules/course-management/course-module/module.route";
 import userCourseRouter from "../modules/user-course/userCourse.route";
 import lectureRouter from "../modules/course-management/lecture/lecture.route";
+import uploadRouter from "../modules/file-uploads/upload.route"
 
 const router = Router();
 
@@ -41,7 +42,10 @@ const moduleRoutes = [
       path: "/learning",
       route: userCourseRouter,
     },
-  
+    {
+      path: "/uploads",
+      route: uploadRouter,
+    },
 
 ];
 
