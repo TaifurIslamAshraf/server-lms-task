@@ -26,14 +26,14 @@ export const accessTokenCookieOptions: CookieOptions = {
   expires: new Date(Date.now() + accessTokenExpire),
   httpOnly: true,
   secure: config.app.env === "production",
-  sameSite: "strict",
+  sameSite: "none",
 };
 
 export const refreshTokenCookieOptions: CookieOptions = {
   expires: new Date(Date.now() + refreshTokenExpire),
   httpOnly: true,
   secure: config.app.env === "production",
-  sameSite: "strict",
+  sameSite: "none",
 };
 
 export const sendToken = (user: any, res: Response) => {
